@@ -33,29 +33,32 @@ For this Lab, you will need to do the following:
 > Modify here: 
 
 **1. List the names of all your teammates:**
-
+Gracie Siu, Sharon John, Sara Clemente
 
 **2. Agree as a team, what branching strategy do you plan to use in your final projects? Justify your choices**
-
+We will each work on our own branches and merge to a main branch
 
 **3.Communication: Outline how the team will communicate — including frequency and methods (e.g., email, WhatsApp, team meetings).  What is the maximum expected response time?**
-
-
+We will communicate via WhatsApp
+Expected response time is same day
 
 **4. Decision-Making: How will decisions be made in this team? How will you stay on track? Do you plan on having meetings or any strategies for working through your final project**
-
-
+Decisions will be made through consensus
+We will stay on track through mid-sprint deadlines and regular check-ins 
+We will meet in person (prefer to meet in person) as much as possible for regular project items
 
 **5. As with any team project there is always the possibility of conflict arising, if it does in the future, how will you resolve differences? List at least two strategies**
-
+We will resolve differences through open and honest communication and discussion, over snacks and good coffee!
 
 
 
 **6.Commitments: How will you handle different levels of participation and commitment? What process will you follow if someone does not live up to his/her/their responsibilities? (3-5 sentences)**
-
+We will openly discuss with the team member with curiosity - assume an oops not an ouch!
 
 
 **7.Diversity: How will you accommodate different learning and working styles? Talk about your own styles and schedules for working and come to an agreement (3-6 sentences)**
-
+We all like to meet in the mornings before classes, which works well
+Sharon likes to use interview rooms which will work well for meeting locations in Heinz
+We all will support each other in this project by ensuring that we are all on the same page of a question or area of the project before moving on to the next phase. 
 
 
