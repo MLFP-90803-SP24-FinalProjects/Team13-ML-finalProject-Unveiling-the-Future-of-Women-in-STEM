@@ -102,15 +102,20 @@ Statistical concept and methodology: Percentage of female graduates by field of 
 Variables: Share of graduates by field, female (%). Broken down by Country, Year. 
 
 Project Questions:
-In the coming years, are women in certain countries more likely to graduate with a STEM major than others? 
-Target variable(s) from data set: ‘Share of STEM Graduates’, ‘Country Name’
+Question 1: In the coming years, are women in certain countries more likely to graduate with a STEM major than others? What factor(s) influence women’s access to STEM fields? Can we expect the proportion of women entering STEM fields to grow in the future? If yes, what factors will influence this growth?
+
+Target variable(s) from data set: ‘Share of STEM Graduates’
 Task type: prediction
-What factor(s) influence women’s access to STEM fields?
-Target variable(s) from data set: Feature(s) in prediction model
+
+Question 2: Are women more likely to complete secondary education in some countries than others? In the coming years, what percentage of women overall and by country, do we expect to enroll in secondary education? What factors indicate whether or not a women completes secondary education? 
+
+Target variable(s) from data set: 'School enrollment, secondary, female (% gross)'
 Task type: prediction
-Can we expect the proportion of women entering STEM fields to grow in the future? If yes, what factors will influence this growth?
-Target variable(s) from data set: ‘Share of STEM Graduates’, ‘Year’, ‘Country Name’
-Task type: prediction
+
+Question 3: Are there "groups" of countries that share characteristics among macroeconomic factors, and education rates among women, and/or women's rights in those countries? For example, do countries with greater rates of education among females and more equal rights among men and women have higher GDP or longer average lifespans? 
+
+Target variable(s) from data set: N/A, this is an unsupervised learning question
+Task type: Clustering 
 
 How to run the file: 
 All the information for our sprint is in one notebook. Reading the CSV, cleaning the datasets, merging and 3 visualizations
@@ -135,7 +140,6 @@ Push everything to the same repo you had from Sprint 2 before Thursday, February
 
 NOTES:
 
-
 Gender data:
 https://genderdata.worldbank.org/
 
@@ -144,5 +148,5 @@ https://genderdata.worldbank.org/indicators/se-ter-grad-fe-zs/?fieldOfStudy=Scie
 
 
 
-
+change
 
