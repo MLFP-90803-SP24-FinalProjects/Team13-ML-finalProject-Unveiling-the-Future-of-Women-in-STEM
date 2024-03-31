@@ -112,6 +112,8 @@ Question 2: Are women more likely to complete secondary education in some countr
 Target variable(s) from data set: 'School enrollment, secondary, female (% gross)'
 Task type: prediction
 
+The baseline model coded for Sprint 4 for this question is in the notebook titled "Question2Gracie.ipynb".
+
 Question 3: Are there "groups" of countries that share characteristics among macroeconomic factors, and education rates among women, and/or women's rights in those countries? For example, do countries with greater rates of education among females and more equal rights among men and women have higher GDP or longer average lifespans? 
 
 Target variable(s) from data set: N/A, this is an unsupervised learning question
