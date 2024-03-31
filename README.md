@@ -67,7 +67,7 @@ We all will support each other in this project by ensuring that we are all on th
 
 Project Title: Gender Difference Indicators and Share of female STEM graduates
 
-Team Names & Emails: Sara Clemente (saraclem@andrew.cmu.edu), Sharon John (sharonjo@andrew.cmu.edu), Gracie Siu (gsiu@andew.cmu.edu)
+Team Names & Emails: Sara Clemente (saraclem@andrew.cmu.edu), Sharon John (sharonjo@andrew.cmu.edu), Gracie Siu (gsiu@andrew.cmu.edu)
 
 
 Project Description: 
@@ -107,6 +107,8 @@ Question 1: In the coming years, are women in certain countries more likely to g
 Target variable(s) from data set: ‘Share of STEM Graduates’
 Task type: prediction
 
+The baseline model coded for Sprint 4 for this question is in the notebook titled "Question1Sharon.ipynb".
+
 Question 2: Are women more likely to complete secondary education in some countries than others? In the coming years, what percentage of women overall and by country, do we expect to enroll in secondary education? What factors indicate whether or not a women completes secondary education? 
 
 Target variable(s) from data set: 'School enrollment, secondary, female (% gross)'
@@ -120,10 +122,13 @@ Target variable(s) from data set: N/A, this is an unsupervised learning question
 Task type: Clustering 
 
 How to run the file: 
-All the information for our sprint is in one notebook. Reading the CSV, cleaning the datasets, merging and 3 visualizations
-Correlation Matrix
-Box plots
-Line plot
+The information from Sprint 3 is in one notebook, labeled Sprint 3.
+
+For Sprint 4, we have three separate notebooks:
+- The feature engineering and data preparation for the models is in the Sprint 3 notebooks
+- The baseline model for question 1 is in a notebook labeled Question1Sharon.ipynb
+- The baseline model for question 2 is in a notebook labeled Question2Gracie.ipynb
+- We did not do any coding for question 3 because this is an unsupervised learning question
 
 References:
 - https://pandas.pydata.org/docs/reference/api/pandas.melt.html
