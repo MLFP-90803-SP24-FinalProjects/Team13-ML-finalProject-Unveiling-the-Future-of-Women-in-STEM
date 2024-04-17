@@ -124,11 +124,25 @@ Task type: Clustering
 How to run the file: 
 The information from Sprint 3 is in one notebook, labeled Sprint 3.
 
-For Sprint 4, we have three separate notebooks:
+For Sprint 5, we have four separate notebooks:
 - The feature engineering and data preparation for the models is in the Sprint 3 notebooks
-- The baseline model for question 1 is in a notebook labeled Question1Sharon.ipynb
-- The baseline model for question 2 is in a notebook labeled Question2Gracie.ipynb
-- We did not do any coding for question 3 because this is an unsupervised learning question
+- The models for question 1 are in a notebook labeled Question1Sharon.ipynb
+- The models for question 2 are in a notebook labeled Question2Gracie.ipynb
+- The models for questions 3 are in a notebook labeled Question3Sara.ipynb
+
+
+Model Evaluation:
+
+Ethical Considerations:
+
+A big concern with a dataset like this is thinking about whether the data and models are biased. With a sensitive issue like women's rights, using the results of these models for policy applications could lead to discrimination. Bias is especially important within the context of secondary schooling because of the fact that women's education is a controversial topic in certain countries. Additionally, women are already a marginalized group, but we need to consider how these models perform for different subsets of women. We must consider whether the model predicts similarly across different demographics, income levels, and ethnicities. If not, is this an issue because of data gaps or because of biases in our model? It's important to also mention the limitations and concerns with the models and their performance when describing the results to women's rights and educational stakeholders. The interpretations and results from a model such as this could have serious affects on policies and the trajectory of women's lives, which is why it's important to consider the previously mentioned ethical concerns for this project.
+
+Additional Model:
+
+- For question 1, the additional model used will be generalized linear regression. We will use this to try out a different type of regression that works well when the distribution is not normal.
+- For question 2, the additional model used will be ElasticNet. We will use this to try a regression that uses a combination of the different types of penalty terms, whereas the ridge model we tried used only one type of penalty term.
+- For question 3, the additional model used will be DBSCAN. We will try this different clustering method to see if it clusters better than the other two unsupervised models we have.
+
 
 References:
 - https://pandas.pydata.org/docs/reference/api/pandas.melt.html
