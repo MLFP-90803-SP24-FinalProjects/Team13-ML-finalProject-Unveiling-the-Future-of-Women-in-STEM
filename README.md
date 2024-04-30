@@ -123,15 +123,13 @@ Model 3: Random Forest
 	Parameters to tune: 'max_depth': [5, 10, 20], 'max_features': [5, 10, 20] ,'min_samples_split': [2, 5, 10]
 	Feature engineering: Data Standardization and Feature SelectioN
 	Metrics: R2 and MSE
-	NEW! Model 4: SVR
-	Parameters to tune: 'C': [0.1, 1],  # Regularization parameter , 'kernel': ['linear', 'rbf', 'poly']} # Kernel type
+	NEW! Model 4: ElasticNet 
+	Parameters to tune: 'alpha': [0.01, 0.1, 1, 10],  
+    'l1_ratio': [0.1, 0.5, 0.7, 0.9] type
 	Feature engineering: Data Standardization and Feature SelectioN
 	Metrics: R2 and MSE
 Model Comparison: 
-	The Ridge model performed the best overall with a 0.77 R squared train and 6.15 test score.
-	The model that improved the most with hyperparameter tuning was the SVR model.
-	Overall, the other models did not perform well with concerns of overfitting. 
-	Another observation to note is that surprisingly the features selection parameters during feature engineering did not make the models perform better. This may be due to the fact that the data was not handled properly and I will have to check on what happened there. 
+The Random Forest model appears to perform the best on the training data, achieving a high R-squared value and low MSE. However, due to the drop in performance on the test data, it may mean that it suffers from overfitting. However, taking into consideration as this model performs relativly the best as compared to the other models, as a data analyst I would choose RF as my model of choice when addressing this question as it shows the most promise if we took a better look into the data and refinement.
 
 ### Question 2: Are women more likely to complete secondary education in some countries than others? In the coming years, what percentage of women overall and by country, do we expect to enroll in secondary education? What factors indicate whether or not a women completes secondary education?
 Target variable(s) from data set: 'School enrollment, secondary, female (% gross)' 
@@ -198,7 +196,8 @@ Discuss as a team any ethical considerations related to your specific problem. T
 Additional Models
 This section must include which additional models you plan to use in your projects and how. The how should include a description of which questions will have the specific additional models or if you plan to add an additional question to your project to cover this requirement.
 
-- For question 1, the additional model used will be generalized linear regression. We will use this to try out a different type of regression that works well when the distribution is not normal.
+- For question 1, we will incorporate the ElasticNet model as an additional approach to regression analysis. Unlike traditional linear regression, ElasticNet combines the penalties of both Lasso and Ridge regression, making it suitable for datasets with multicollinearity or a large number of features. However, elasticNet did not yeild the best results, with low R-squared values and relatively high MSE. It failed to capture the underlying patterns in the data effectively.
+
 - For question 2, the additional model used will be ElasticNet. We will use this to try a regression that uses a combination of the different types of penalty terms, whereas the ridge model we tried used only one type of penalty term.
 - For question 3, the additional model used will be DBSCAN. We chose DBSCAN in hopes that it would create better clusters with our data, which has significant overlap. We tuned the epsilon and min number of samples. We also tested the model with both the scaled data set and with PCA. Lastly, we conducted additional feature engineering by limiting the data set to a single year to draw clearer insights from the clusters.
 
