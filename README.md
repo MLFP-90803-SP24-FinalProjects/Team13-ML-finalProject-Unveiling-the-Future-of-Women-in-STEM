@@ -59,6 +59,24 @@ Sharon likes to use interview rooms which will work well for meeting locations i
 We all will support each other in this project by ensuring that we are all on the same page of a question or area of the project before moving on to the next phase. 
 
 
+## Sprint 6
+
+
+#### Running the Project / Getting Started
+- From the Main Branch: 
+	- Source files must be pulled from Google Drive. There are two source files:
+		- 'Gender_StatsData.csv'
+		- 'Share of graduates by field, female (%).csv'
+	- To run the original data cleaning, preprocessing, and data scaling, and generate the resulting data set to be used for the models, run file named: “Sprint3_S24_Team13.ipynb
+	- To run the models for question 1 run notebook: Question1Sharon.ipynb
+	- To run the models for question 2 run notebook:Question2Gracie.ipynb
+	- To run the models for question 3 run notebook:Question3Sara.ipynb
+Note: all 3 notebooks with models utilize the same dataset. 
+
+#### Disclaimer
+The purpose of this project is to explore the multi-dimensional nature of women’s education and mobility. The results presented are solely intended to meet the requirements of a specific assignment in an academic setting. The project was limited to data collected by external sources and we (the authors) did not evaluate the data collection or methodologies used by these sources. We recognize that there may be cultural differences that we did not adequately account for in the limited time that this project was completed. Any conclusions drawn from this project must be taken in the context of the limited scope and potential for bias in data collection.
+
+
 ## Sprint 5 
 	The feature engineering and data preparation for the models is in the Sprint 3 notebooks
 	The models for question 1 are in a notebook labeled Question1Sharon.ipynb
@@ -177,11 +195,12 @@ Discuss as a team any ethical considerations related to your specific problem. T
 	A big concern with a dataset like this is thinking about whether the data and models are biased. With a sensitive issue like women's rights, using the results of these models for policy applications could lead to discrimination. Bias is especially important within the context of secondary schooling because of the fact that women's education is a controversial topic in certain countries. Additionally, women are already a marginalized group, but we need to consider how these models perform for different subsets of women. We must consider whether the model predicts similarly across different demographics, income levels, and ethnicities. If not, is this an issue because of data gaps or because of biases in our model? It's important to also mention the limitations and concerns with the models and their performance when describing the results to women's rights and educational stakeholders. The interpretations and results from a model such as this could have serious affects on policies and the trajectory of women's lives, which is why it's important to consider the previously mentioned ethical concerns for this project.
 
 ### Additional Models
+Additional Models
 This section must include which additional models you plan to use in your projects and how. The how should include a description of which questions will have the specific additional models or if you plan to add an additional question to your project to cover this requirement.
 
 - For question 1, the additional model used will be generalized linear regression. We will use this to try out a different type of regression that works well when the distribution is not normal.
 - For question 2, the additional model used will be ElasticNet. We will use this to try a regression that uses a combination of the different types of penalty terms, whereas the ridge model we tried used only one type of penalty term.
-- For question 3, the additional model used will be DBSCAN. We will try this different clustering method to see if it clusters better than the other two unsupervised models we have.
+- For question 3, the additional model used will be DBSCAN. We chose DBSCAN in hopes that it would create better clusters with our data, which has significant overlap. We tuned the epsilon and min number of samples. We also tested the model with both the scaled data set and with PCA. Lastly, we conducted additional feature engineering by limiting the data set to a single year to draw clearer insights from the clusters.
 
 
 ### References:
@@ -238,57 +257,6 @@ NOTES:
 Gender data: https://genderdata.worldbank.org/
 Share of female STEM graduates: https://genderdata.worldbank.org/indicators/se-ter-grad-fe-zs/?fieldOfStudy=Science%2C%20Technology%2C%20Engineering%20and%20Mathematics%20%28STEM%29
 change
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
