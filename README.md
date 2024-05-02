@@ -1,5 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/nT4M_vAo)
-# Sprint 2 - 90803
+# All sprints - 90803
 ### Machine Learning Foundations with Python
 #### Spring 2024
 
@@ -59,22 +59,55 @@ Sharon likes to use interview rooms which will work well for meeting locations i
 We all will support each other in this project by ensuring that we are all on the same page of a question or area of the project before moving on to the next phase. 
 
 
-## Sprint 6
+## Title of your project : 
+### Breaking Barriers : Unveiling the Future of Women in STEM 
+
+### Names: Gracie Sui, Sara Clemente, Sharon John\
+Team Names & Emails: Sara Clemente (saraclem@andrew.cmu.edu), Sharon John (sharonjo@andrew.cmu.edu), Gracie Siu (gsiu@andew.cmu.edu)
+
+### Sprint 2, 3, & 4
+
+#### Project Description:
+Why is this topic relevant?
+Gender disparities persist in STEM fields worldwide, with women being underrepresented in these areas compared to men. Addressing these disparities is crucial for achieving gender equality and ensuring that all individuals have equal opportunities to pursue careers in high-demand fields.
+
+Who does this topic affect? Where does it happen? When did it happen?
+This topic affects various stakeholders, including individuals, communities, industries, and economies. For individuals, it impacts career opportunities, earning potential, and professional fulfillment. Communities benefit from diverse perspectives and solutions that arise from gender-inclusive STEM environments. Industries benefit from tapping into a broader talent pool, fostering innovation, and addressing skill shortages. Economies benefit from increased productivity, competitiveness, and economic growth when all segments of the population are fully engaged in STEM fields.
+
+The scope: Gender disparities happen in STEM worldwide, although the extent of these disparities may vary across regions and countries.While some countries have made significant strides in promoting gender diversity in STEM, others continue to face significant challenges. This issue is not limited to a specific geographic location but rather spans across continents and cultures.
+
+Timeline:
+Gender disparities in STEM have historical roots, stemming from systemic biases, social norms, and cultural expectations. While progress has been made in recent decades to address these disparities, significant gaps persist. Understanding the historical context of gender inequalities in STEM is essential for designing effective interventions and policies to promote diversity and inclusion.
 
 
-#### Running the Project / Getting Started
-- From the Main Branch: 
-	- Source files must be pulled from Google Drive. There are two source files:
-		- 'Gender_StatsData.csv'
-		- 'Share of graduates by field, female (%).csv'
-	- To run the original data cleaning, preprocessing, and data scaling, and generate the resulting data set to be used for the models, run file named: “Sprint3_S24_Team13.ipynb
-	- To run the models for question 1 run notebook: Question1Sharon.ipynb
-	- To run the models for question 2 run notebook:Question2Gracie.ipynb
-	- To run the models for question 3 run notebook:Question3Sara.ipynb
-Note: all 3 notebooks with models utilize the same dataset. 
+What are your motivations for addressing this topic?
+As three women in STEM we know the beauty but also challenges in this field. Addressing gender disparities in STEM is not only a matter of social justice but also an economic imperative. By ensuring equal access and opportunities for all individuals in STEM fields, societies can unlock the full potential of their human capital, drive innovation, and build a more equitable and prosperous future for everyone.
 
-#### Disclaimer
-The purpose of this project is to explore the multi-dimensional nature of women’s education and mobility. The results presented are solely intended to meet the requirements of a specific assignment in an academic setting. The project was limited to data collected by external sources and we (the authors) did not evaluate the data collection or methodologies used by these sources. We recognize that there may be cultural differences that we did not adequately account for in the limited time that this project was completed. Any conclusions drawn from this project must be taken in the context of the limited scope and potential for bias in data collection.
+#### Datasets:
+Gender data: https://genderdata.worldbank.org/
+Format: CSV
+Metadata: 
+The Gender Data Portal is more than just a database of sex-disaggregated data and gender statistics. Data sources include United Nations, UNESCAP, Eurosat, World Economic Forum, WHO, IMF, Institute for Democracy and Electoral Assistance, and more (World Bank). 
+
+Variables: Multiple indicators representing gender differences by Country, Year. Indicators span assets, legal rights, education rights and completion, employment, life expectancy, GDP. 
+
+Share of female STEM graduates: https://genderdata.worldbank.org/indicators/se-ter-grad-fe-zs/?fieldOfStudy=Science%2C%20Technology%2C%20Engineering%20and%20Mathematics%20%28STEM%29
+Format: CSV
+Metadata: 
+For aggregate data, each economy is classified based on the classification of World Bank Group's fiscal year 2020 (July 1, 2019-June 30, 2020) (Worldbank)
+Statistical concept and methodology: Percentage of female graduates by field of study in tertiary education is calculated by dividing the number of female graduates in a given field of education from tertiary education by the total number of graduates in the same field, and multiplying by 100. Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example). Source: UNESCO Institute for Statistics (http://uis.unesco.org/). Data as of March 2020.
+Variables: Share of graduates by field, female (%). Broken down by Country, Year. 
+
+#### Project Questions:
+ -In the coming years, are women in certain countries more likely to graduate with a STEM major than others? 
+Target variable(s) from data set: ‘Share of STEM Graduates’, ‘Country Name’
+Task type: prediction
+- What factor(s) influence women’s access to STEM fields?
+Target variable(s) from data set: Feature(s) in prediction model
+Task type: prediction
+- Can we expect the proportion of women entering STEM fields to grow in the future? If yes, what factors will influence this growth?
+Target variable(s) from data set: ‘Share of STEM Graduates’, ‘Year’, ‘Country Name’
+Task type: prediction
 
 
 ## Sprint 5 
@@ -196,11 +229,29 @@ Discuss as a team any ethical considerations related to your specific problem. T
 Additional Models
 This section must include which additional models you plan to use in your projects and how. The how should include a description of which questions will have the specific additional models or if you plan to add an additional question to your project to cover this requirement.
 
-- For question 1, we will incorporate the ElasticNet model as an additional approach to regression analysis. Unlike traditional linear regression, ElasticNet combines the penalties of both Lasso and Ridge regression, making it suitable for datasets with multicollinearity or a large number of features. However, elasticNet did not yeild the best results, with low R-squared values and relatively high MSE. It failed to capture the underlying patterns in the data effectively.
+- For question 1, the additional model used will be ElasticNet. We will use this to try a regression that uses a combination of the different types of penalty terms, whereas the ridge model we tried used only one type of penalty term. We chose this one because the ridge model was performing the best of the preliminary models we did.
+  
+- For question 2, the additional model used will be XGBoost Regressor. We used this model because the ensemble models were performing the best on this prediction, so we thought xgboost would be a good new model to try.
+  
+- For question 3, the additional model used will be DBSCAN. We will try this different clustering method to see if it clusters better than the other two unsupervised models we have.
 
-- For question 2, the additional model used will be ElasticNet. We will use this to try a regression that uses a combination of the different types of penalty terms, whereas the ridge model we tried used only one type of penalty term.
-- For question 3, the additional model used will be DBSCAN. We chose DBSCAN in hopes that it would create better clusters with our data, which has significant overlap. We tuned the epsilon and min number of samples. We also tested the model with both the scaled data set and with PCA. Lastly, we conducted additional feature engineering by limiting the data set to a single year to draw clearer insights from the clusters.
+  
+## Sprint 6
 
+
+#### Running the Project / Getting Started
+- From the Main Branch: 
+	- Source files must be pulled from Google Drive. There are two source files:
+		- 'Gender_StatsData.csv'
+		- 'Share of graduates by field, female (%).csv'
+	- To run the original data cleaning, preprocessing, and data scaling, and generate the resulting data set to be used for the models, run file named: “Sprint3_S24_Team13.ipynb
+	- To run the models for question 1 run notebook: Question1Sharon.ipynb
+	- To run the models for question 2 run notebook:Question2Gracie.ipynb
+	- To run the models for question 3 run notebook:Question3Sara.ipynb
+Note: all 3 notebooks with models utilize the same dataset. 
+
+#### Disclaimer
+The purpose of this project is to explore the multi-dimensional nature of women’s education and mobility. The results presented are solely intended to meet the requirements of a specific assignment in an academic setting. The project was limited to data collected by external sources and we (the authors) did not evaluate the data collection or methodologies used by these sources. We recognize that there may be cultural differences that we did not adequately account for in the limited time that this project was completed. Any conclusions drawn from this project must be taken in the context of the limited scope and potential for bias in data collection.
 
 ### References:
 https://pandas.pydata.org/docs/reference/api/pandas.melt.html
@@ -387,55 +438,6 @@ Model Comparison:
 
 
 
-
-
-Sprint 2, 3, & 4
-Project Title: Gender Difference Indicators and Share of female STEM graduates
-
-Team Names & Emails: Sara Clemente (saraclem@andrew.cmu.edu), Sharon John (sharonjo@andrew.cmu.edu), Gracie Siu (gsiu@andew.cmu.edu)
-
-
-Project Description: 
-Why is this topic relevant?
-Gender disparities persist in STEM fields worldwide, with women being underrepresented in these areas compared to men. Addressing these disparities is crucial for achieving gender equality and ensuring that all individuals have equal opportunities to pursue careers in high-demand fields.
-
-Who does this topic affect? Where does it happen? When did it happen?
-This topic affects various stakeholders, including individuals, communities, industries, and economies. For individuals, it impacts career opportunities, earning potential, and professional fulfillment. Communities benefit from diverse perspectives and solutions that arise from gender-inclusive STEM environments. Industries benefit from tapping into a broader talent pool, fostering innovation, and addressing skill shortages. Economies benefit from increased productivity, competitiveness, and economic growth when all segments of the population are fully engaged in STEM fields.
-
-The scope: Gender disparities happen in STEM worldwide, although the extent of these disparities may vary across regions and countries.While some countries have made significant strides in promoting gender diversity in STEM, others continue to face significant challenges. This issue is not limited to a specific geographic location but rather spans across continents and cultures.
-
-Timeline:
-Gender disparities in STEM have historical roots, stemming from systemic biases, social norms, and cultural expectations. While progress has been made in recent decades to address these disparities, significant gaps persist. Understanding the historical context of gender inequalities in STEM is essential for designing effective interventions and policies to promote diversity and inclusion.
-
-
-What are your motivations for addressing this topic?
-As three women in STEM we know the beauty but also challenges in this field. Addressing gender disparities in STEM is not only a matter of social justice but also an economic imperative. By ensuring equal access and opportunities for all individuals in STEM fields, societies can unlock the full potential of their human capital, drive innovation, and build a more equitable and prosperous future for everyone.
-
-Datasets:
-Gender data: https://genderdata.worldbank.org/
-Format: CSV
-Metadata: 
-The Gender Data Portal is more than just a database of sex-disaggregated data and gender statistics. Data sources include United Nations, UNESCAP, Eurosat, World Economic Forum, WHO, IMF, Institute for Democracy and Electoral Assistance, and more (World Bank). 
-
-Variables: Multiple indicators representing gender differences by Country, Year. Indicators span assets, legal rights, education rights and completion, employment, life expectancy, GDP. 
-
-Share of female STEM graduates: https://genderdata.worldbank.org/indicators/se-ter-grad-fe-zs/?fieldOfStudy=Science%2C%20Technology%2C%20Engineering%20and%20Mathematics%20%28STEM%29
-Format: CSV
-Metadata: 
-For aggregate data, each economy is classified based on the classification of World Bank Group's fiscal year 2020 (July 1, 2019-June 30, 2020) (Worldbank)
-Statistical concept and methodology: Percentage of female graduates by field of study in tertiary education is calculated by dividing the number of female graduates in a given field of education from tertiary education by the total number of graduates in the same field, and multiplying by 100. Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example). Source: UNESCO Institute for Statistics (http://uis.unesco.org/). Data as of March 2020.
-Variables: Share of graduates by field, female (%). Broken down by Country, Year. 
-
-Project Questions:
-In the coming years, are women in certain countries more likely to graduate with a STEM major than others? 
-Target variable(s) from data set: ‘Share of STEM Graduates’, ‘Country Name’
-Task type: prediction
-What factor(s) influence women’s access to STEM fields?
-Target variable(s) from data set: Feature(s) in prediction model
-Task type: prediction
-Can we expect the proportion of women entering STEM fields to grow in the future? If yes, what factors will influence this growth?
-Target variable(s) from data set: ‘Share of STEM Graduates’, ‘Year’, ‘Country Name’
-Task type: prediction
 
 How to run the file: 
 <<<<<<< HEAD
