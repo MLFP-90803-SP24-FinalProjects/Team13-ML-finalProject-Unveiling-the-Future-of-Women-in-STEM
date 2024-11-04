@@ -5,60 +5,6 @@
 
 ---
 
-> Modify here: 
-
-For this Lab, you will need to do the following:
-
-1. Git clone your repo to your local machine (look back at Lab 1 if you have any doubts), using the SSH connection.
-2. Open the `Sprint2_S24_TeamName` jupyter notebook and work through it.
-3. It is advisable to work on different branches and, in the end, merge your branches to `main`.
-4. Periodically go back to the terminal to commit your changes to your Jupyter Notebook. Do not wait until the end; make sure to commit for at least every question in the notebook. Remember that doing a commit involves:
-	-  Making changes to your jupyter notebook
-	-  Adding changes to your staging area (`git add`)
-	-  Committing, with a descriptive message of the task you are committing (`git commit -m "descriptive message"`).
-	-  Add a gitignore `git add .gitignore` - for the files you want the commit to ignore. For example, in MacOS you might want to ignore `.DS_Store`. Add this to your gitignore `echo .DS_Store >> .gitignore`. Other files that you might want to include here are `ipynb_checkpoints/*`.
-	-  Here are some links if you want to read more on [ipynb checkpoints](https://stackoverflow.com/questions/46421663/what-are-jupyter-notebook-checkpoint-files-for) or how to [gitignore](https://stackoverflow.com/questions/35916658/how-to-git-ignore-ipython-notebook-checkpoints-anywhere-in-repository) them.
-5. When you are ready to push back to your GitHub remote repo, make sure to:
-	- Have any branches merged into `main`
-	- `git push origin main`
-	- Have your passphrase at hand
-	- After the first push, remember to always `git pull` before working on your local repo (to make sure you're up to date) and then `git push` when you are ready to push changes back to your remote repo.
-
-## Notes on this Sprint - To Modify
-- Please follow the instructions provided in the videos (CANVAS)
-- Once you are done, please answer the questions below. Make sure you have discussed and come to a consensus when addressing the following questions.
-
-> Modify here: 
-
-**1. List the names of all your teammates:**
-Gracie Siu, Sharon John, Sara Clemente
-
-**2. Agree as a team, what branching strategy do you plan to use in your final projects? Justify your choices**
-We will each work on our own branches and merge to a main branch
-
-**3.Communication: Outline how the team will communicate — including frequency and methods (e.g., email, WhatsApp, team meetings).  What is the maximum expected response time?**
-We will communicate via WhatsApp
-Expected response time is same day
-
-**4. Decision-Making: How will decisions be made in this team? How will you stay on track? Do you plan on having meetings or any strategies for working through your final project**
-Decisions will be made through consensus
-We will stay on track through mid-sprint deadlines and regular check-ins 
-We will meet in person (prefer to meet in person) as much as possible for regular project items
-
-**5. As with any team project there is always the possibility of conflict arising, if it does in the future, how will you resolve differences? List at least two strategies**
-We will resolve differences through open and honest communication and discussion, over snacks and good coffee!
-
-
-**6.Commitments: How will you handle different levels of participation and commitment? What process will you follow if someone does not live up to his/her/their responsibilities? (3-5 sentences)**
-We will openly discuss with the team member with curiosity - assume an oops not an ouch!
-
-
-**7.Diversity: How will you accommodate different learning and working styles? Talk about your own styles and schedules for working and come to an agreement (3-6 sentences)**
-We all like to meet in the mornings before classes, which works well
-Sharon likes to use interview rooms which will work well for meeting locations in Heinz
-We all will support each other in this project by ensuring that we are all on the same page of a question or area of the project before moving on to the next phase. 
-
-
 ## Title of your project : 
 ### Breaking Barriers : Unveiling the Future of Women in STEM 
 
@@ -237,8 +183,6 @@ This section must include which additional models you plan to use in your projec
 
   
 ## Sprint 6
-
-
 #### Running the Project / Getting Started
 - From the Main Branch: 
 	- Source files must be pulled from Google Drive. There are two source files:
@@ -292,40 +236,9 @@ The models for questions 3 are in a notebook labeled Question3Sara.ipynb
 Model Evaluation:
 Ethical Considerations:
 A big concern with a dataset like this is thinking about whether the data and models are biased. With a sensitive issue like women's rights, using the results of these models for policy applications could lead to discrimination. Bias is especially important within the context of secondary schooling because of the fact that women's education is a controversial topic in certain countries. Additionally, women are already a marginalized group, but we need to consider how these models perform for different subsets of women. We must consider whether the model predicts similarly across different demographics, income levels, and ethnicities. If not, is this an issue because of data gaps or because of biases in our model? It's important to also mention the limitations and concerns with the models and their performance when describing the results to women's rights and educational stakeholders. The interpretations and results from a model such as this could have serious affects on policies and the trajectory of women's lives, which is why it's important to consider the previously mentioned ethical concerns for this project.
-Additional Model:
-For question 1, the additional model used will be generalized linear regression. We will use this to try out a different type of regression that works well when the distribution is not normal.
-For question 2, the additional model used will be ElasticNet. We will use this to try a regression that uses a combination of the different types of penalty terms, whereas the ridge model we tried used only one type of penalty term.
-For question 3, the additional model used will be DBSCAN. We will try this different clustering method to see if it clusters better than the other two unsupervised models we have.
-References:
-https://pandas.pydata.org/docs/reference/api/pandas.melt.html
-Lab 2 from EDA
-https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.pivot_table.html
-https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.astype.html
-https://genderdata.worldbank.org/resources/?tab=gender-data-portals
-Submission Include your Jupyter Notebook/s in the repo Add your dataset to your .gitignore if you are working on it in your local repo, but make sure to provide an exact link for us to download your dataset/s Modify the second half of your README from Sprint 2 to include your project description, questions, etc. Here's a sample: Sprint3_README_Sample-1.md Download Sprint3_README_Sample-1.md Push everything to the same repo you had from Sprint 2 before Thursday, February 29th at 11:59 PM
-NOTES:
-Gender data: https://genderdata.worldbank.org/
-Share of female STEM graduates: https://genderdata.worldbank.org/indicators/se-ter-grad-fe-zs/?fieldOfStudy=Science%2C%20Technology%2C%20Engineering%20and%20Mathematics%20%28STEM%29
-change
 
-
-
-Notes from TA Meetings
-1 linear regression model (e.g.for a baseline)
-1 regularized model (e.g.ridge or lasso)
-1 ensemble model (e.g.random forest)
-Random forest - tune number of trees, number of estimators, max_features (square root or log)
-2-3 hyperparameters for each model
-potential new models
-Support Vector Machines
-Neural Networks
-ElasticNet - a combination of lasso + ridge
-Other clustering techniques (DBSCAN, MiniBatch, Kmeans, Gaussian Mixture)
-Generalized Linear Models (GAMs)
-XGBoost
 
 Sprint 5 New Sections
-
 
 Model Evaluation
 Question 1: In the coming years, are women in certain countries more likely to graduate with a STEM major than others? What factor(s) influence women’s access to STEM fields? Can we expect the proportion of women entering STEM fields to grow in the future? If yes, what factors will influence this growth?
@@ -353,94 +266,9 @@ Ethical Consideration
 Discuss as a team any ethical considerations related to your specific problem. These can be regarding the data, the model itself, and the results to be presented.
 
 
-Additional Models
-This section must include which additional models you plan to use in your projects and how. The how should include a description of which questions will have the specific additional models or if you plan to add an additional question to your project to cover this requirement.
-
-Question 1:
-Question 2: 
-Question 3: 
-
-
-Question 1
-In the coming years, are women in certain countries more likely to graduate with a STEM major than others? What factor(s) influence women’s access to STEM fields? Can we expect the proportion of women entering STEM fields to grow in the future? If yes, what factors will influence this growth?
-Target variable(s) from data set: ‘Share of STEM Graduates’ 
-Task type: prediction
-Model 1: Linear Regression
-Parameters to tune:
-Feature engineering: 
-Metrics:
-Model 2: Ridge/Lasso
-Parameters to tune:
-Feature engineering: 
-Metrics:
-Model 3: Ensemble
-Parameters to tune:
-Feature engineering: 
-Metrics:
-NEW! Model 4: Generalized Linear Model
-Parameters to tune:
-Feature engineering: 
-Metrics:
-Model Comparison: 
-Question 2
-Are women more likely to complete secondary education in some countries than others? In the coming years, what percentage of women overall and by country, do we expect to enroll in secondary education? What factors indicate whether or not a women completes secondary education?
-Target variable(s) from data set: 'School enrollment, secondary, female (% gross)' 
-Task type: prediction
-Model 1: Linear Regression
-Parameters to tune:
-Feature engineering: 
-Metrics:
-Model 2: Ridge/Lasso
-Parameters to tune:
-Feature engineering: 
-Metrics:
-Model 3: Ensemble
-Parameters to tune:
-Feature engineering: 
-Metrics:
-NEW! Model 4: ElasticNet
-Parameters to tune:
-Feature engineering: 
-Metrics:
-Model Comparison:
-Question 3
-Are there "groups" of countries that share characteristics among macroeconomic factors, and education rates among women, and/or women's rights in those countries? For example, do countries with greater rates of education among females and more equal rights among men and women have higher GDP or longer average lifespans?
-Target variable(s) from data set: N/A, this is an unsupervised learning question 
-Task type: Clustering
-Model 1: KMeans Clustering
-Parameters to tune: n_clusters
-Feature engineering: PCA
-Metrics: 
-Distortion score & Calinski-Harabasz to compare k (number of clusters)
-Silhouette score and silhouette plotting to determine n_clusters
-Model 2: Hierarchical / Agglomerative Clustering
-Parameters to tune: n_clusters, linkage metric 
-Feature engineering: PCA
-Metrics: 
-Linkage metrics: ‘ward’, ‘average’, ‘complete’, ‘centroid’
-Model 3: 
-Parameters to tune:
-Feature engineering: 
-Metrics:
-NEW! Model 4: DBSCAN?
-Parameters to tune: eps, min_samples
-Feature engineering: PCA
-Metrics: 
-Silhouette score
-Model Comparison: 
-
-
-
-
-
-
-
-
-
-
 
 How to run the file: 
-<<<<<<< HEAD
+
 All the information for our sprint is in one notebook. Reading the CSV, cleaning the datasets, merging and 3 visualizations
 Correlation Matrix
 Box plots
@@ -467,10 +295,6 @@ Additional Model:
 - For question 2, the additional model used will be ElasticNet. We will use this to try a regression that uses a combination of the different types of penalty terms, whereas the ridge model we tried used only one type of penalty term.
 - For question 3, the additional model used will be DBSCAN. We will try this different clustering method to see if it clusters better than the other two unsupervised models we have.
 
-<<<<<<< HEAD
->>>>>>> 4e7a8f3436ef7a502c19350a4525e01a10ddd3b6
-=======
->>>>>>> 4e7a8f3436ef7a502c19350a4525e01a10ddd3b6
 
 References:
 - https://pandas.pydata.org/docs/reference/api/pandas.melt.html
